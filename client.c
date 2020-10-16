@@ -1,26 +1,45 @@
 #include<stdio.h>
+
 #include<string.h>
+
 #include<stdlib.h>
+
 #include<math.h>
+
 #include"dbms.h"
 
 
 
 //Function prototypes:
+
 void add(FILE * fp); //to add to list
+
 FILE * del(FILE * fp);//to delete from list
+
 void modify(FILE * fp);//to modify a record
+
 void displayList(FILE * fp);//display whole list
+
 void searchRecord(FILE *fp);//find a particular record
+
 void printChar(char ch,int n);//printing a character ch n times
+
 void printHead();//printing head line for each screen
 
+
+
 int main()
+
 {
+
     FILE * fp;
+
     Student s;
+
     int option;
+
     char another;
+
     
 
     if((fp=fopen("studentInfo.txt","rb+"))==NULL)
