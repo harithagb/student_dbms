@@ -1,2 +1,2 @@
 # student_dbms
-A student database management system written in Python.
+A student database management system written in C.
